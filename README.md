@@ -21,7 +21,9 @@ Commandline client for accessing Kubernetes master node endpoint
 | Rollback a deployment to a past revision| `kubectl rollout undo deployment test-nginx --to-revision=1`
 | Show kubectl client configuration file| `kubectl config view`
 | Create namespace| `kubectl create namespace test-namespace`
-| Create object from filename| `kubectl create -f test-file.yml
+| Create object from filename| `kubectl create -f test-file.yml`
+| Get certificate signing requests| `kubectl get csr`
+| Approve certificate singing request| `kubectl certificate approve my-csr`
 
 
 ## minikube
