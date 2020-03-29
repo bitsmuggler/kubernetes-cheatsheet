@@ -22,8 +22,7 @@ Commandline client for accessing Kubernetes master node endpoint
 | Create object from filename| `kubectl create -f test-file.yml`
 | Get certificate signing requests| `kubectl get csr`
 | Approve certificate singing request| `kubectl certificate approve my-csr`
-| Extract the approved certificate from the csr, decode it with base64 and save it as a cert file| <code>
-kubectl get csr my-csr -o jsonpath='{.status.certificate}' | base64 --decode > my.crt</code>
+| Extract the approved certificate from the csr, decode it with base64 and save it as a cert file| <code>kubectl get csr my-csr -o jsonpath='{.status.certificate}' | base64 --decode > my.crt</code>
 | Configure the user's credentials by assingin the key and certificate| `kubectl config set-credentials student --client-certificate=my.crt --client-key=my.key`|
 | Create a new kontext entry in the kubect config file for the new user associated with a specific namespace|`kubectl config set-context test-context --cluster=minikube --namespace=test-namespace --user=my-test-user`
 
