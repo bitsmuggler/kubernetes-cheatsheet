@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod # Pod object type
+metadata:
+  name: nginx-pod # Object name
+  labels:
+    app: nginx
+spec: # state of the pod (PodSpec), single pod running nginx:1.15.11 image from DockerHub
+  containers:
+  - name: nginx
+    image: nginx:1.15.11
+    ports:
+    - containerPort: 80
