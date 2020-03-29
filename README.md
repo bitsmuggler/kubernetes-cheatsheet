@@ -9,6 +9,8 @@ Commandline client for accessing Kubernetes master node endpoint
 | Get an access token | `TOKEN=$(kubectl describe secret -n kube-system $(kubectl get secrets -n kube-system | grep default | cut -f1 -d ' ') | grep -E '^token' | cut -f2 -d':' | tr -d '\t' | tr -d " ")`|
 | Get API server endpoint(s) | `APISERVER=$(kubectl config view | grep https | cut -f 2- -d ":" | tr -d " ")`|
 | Get Cluster info | `kubectl cluster-info`
+| List namespaces | `kubectl get namespaces`
+
 
 ## minikube
 
