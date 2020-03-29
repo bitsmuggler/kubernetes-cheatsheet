@@ -1,10 +1,10 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
+apiVersion: apps/v1 # API Endpoint which we want to connect to
+kind: Deployment # Object type (can be Pod, Replicaset, Namespace, Service, etc.)
+metadata: # Object basic information
   name: nginx-deployment
   labels:
     app: nginx
-spec:
+spec: # Marks the beginning of the desired state of the deployment object
   replicas: 3
   selector:
     matchLabels:
@@ -13,9 +13,9 @@ spec:
     metadata:
       labels:
         app: nginx
-    spec:
+    spec: # Start of pods template
       containers:
       - name: nginx
-        image: nginx:1.15.11
+        image: nginx:1.15.11 # image speec
         ports:
         - containerPort: 80
