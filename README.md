@@ -10,7 +10,15 @@ Commandline client for accessing Kubernetes master node endpoint
 | Get API server endpoint(s) | `APISERVER=$(kubectl config view | grep https | cut -f 2- -d ":" | tr -d " ")`|
 | Get Cluster info | `kubectl cluster-info`
 | List namespaces | `kubectl get namespaces`
-
+| Create a deployment | `kubectl create deployment test-nginx --image=nginx:1.17.9-alpine`
+| Get deployments, ReplicaSets and Pods (shortnames)| `kubectl get deploy,rs,po`
+| Get deployments, ReplicaSets and Pods (shortnames) with a specific label | `kubectl get deploy,rs,po -l app=test-nginx`
+| Scale the deployment up to 3 replicas| `kubectl scale deploy test-nginx --replicas=3`
+| Show deplyoment configuration| `kubectl describe deployment test-nginx`
+| Show rollout history of a deployment | `kubectl rollout history deploy test-nginx`
+| Show details of a specific revision entry| `kubectl rollout history deploy test-nginx --revision=1`
+| Set a image on a deployment|`kubectl set image deploy test-nginx nginx=nginx:1.16-alpine`
+| Rollback a deployment to a past revision| `kubectl rollout undo deployment test-nginx --to-revision=1`
 
 ## minikube
 
