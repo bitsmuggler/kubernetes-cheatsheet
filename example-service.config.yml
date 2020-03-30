@@ -4,7 +4,7 @@ metadata:
   name: frontend-svc
 spec:
   selector:
-    app: frontend
+    app: frontend # Selection key = app, value = frontend
   ports:
   - protocol: TCP
     port: 80
