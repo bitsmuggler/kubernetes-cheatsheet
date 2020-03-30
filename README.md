@@ -11,8 +11,9 @@ Commandline client for accessing Kubernetes master node endpoint
 | Create a deployment | `kubectl create deployment test-nginx --image=nginx:1.17.9-alpine`
 | Get deployments, ReplicaSets and Pods (shortnames)| `kubectl get deploy,rs,po`
 | Get deployments, ReplicaSets and Pods (shortnames) with a specific label | `kubectl get deploy,rs,po -l app=test-nginx`
+| Get pods with specific label| `kubectl get pods -L <<Label1>>, <<Label2>>
 | Scale the deployment up to 3 replicas| `kubectl scale deploy test-nginx --replicas=3`
-| Show pod configuration | `kubectl describe pod <<Pod Name>>
+| Show pod configuration | `kubectl describe pod <<Pod Name>>`
 | Show deplyoment configuration| `kubectl describe deployment test-nginx`
 | Show rollout history of a deployment | `kubectl rollout history deploy test-nginx`
 | Show details of a specific revision entry| `kubectl rollout history deploy test-nginx --revision=1`
