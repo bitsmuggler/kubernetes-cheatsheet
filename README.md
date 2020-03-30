@@ -12,6 +12,7 @@ Commandline client for accessing Kubernetes master node endpoint
 | Get deployments, ReplicaSets and Pods (shortnames)| `kubectl get deploy,rs,po`
 | Get deployments, ReplicaSets and Pods (shortnames) with a specific label | `kubectl get deploy,rs,po -l app=test-nginx`
 | Scale the deployment up to 3 replicas| `kubectl scale deploy test-nginx --replicas=3`
+| Show pod configuration | `kubectl describe pod <<Pod Name>>
 | Show deplyoment configuration| `kubectl describe deployment test-nginx`
 | Show rollout history of a deployment | `kubectl rollout history deploy test-nginx`
 | Show details of a specific revision entry| `kubectl rollout history deploy test-nginx --revision=1`
