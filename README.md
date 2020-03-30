@@ -9,6 +9,7 @@ Commandline client for accessing Kubernetes master node endpoint
 | Get Cluster info | `kubectl cluster-info`
 | List namespaces | `kubectl get namespaces`
 | Create a deployment | `kubectl create deployment test-nginx --image=nginx:1.17.9-alpine`
+| Delete a deployment | `kubectl delete deployments myDeployment`
 | Get deployments, ReplicaSets and Pods (shortnames)| `kubectl get deploy,rs,po`
 | Get deployments, ReplicaSets and Pods (shortnames) with a specific label | `kubectl get deploy,rs,po -l app=test-nginx`
 | Get pods with specific label keys| `kubectl get pods -L label1, label2`
