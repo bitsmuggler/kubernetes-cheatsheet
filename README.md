@@ -31,8 +31,9 @@ Commandline client for accessing Kubernetes master node endpoint
 | Configure the user's credentials by assingin the key and certificate| `kubectl config set-credentials student --client-certificate=my.crt --client-key=my.key`|
 | Create a new kontext entry in the kubect config file for the new user associated with a specific namespace|`kubectl config set-context test-context --cluster=minikube --namespace=test-namespace --user=my-test-user`
 | Get role-bindings of a namespace | `kubectl -n test-namespace get rolebindings`
-| Remove a specific rolebinding in a namespace| `kubectl -n test-namespace delete rolebinding existing-test-role-binding`
-
+|Remove a specific rolebinding in a namespace| `kubectl -n test-namespace delete rolebinding existing-test-role-binding`
+|Create the ConfigMap| `kubectl create configmap test-config --from-literal=key1=value1 --from-literal=key2=value2`
+|Read the ConfigMap| `kubectl get configmaps test-config -o yaml`
 
 ## minikube
 
