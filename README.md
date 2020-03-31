@@ -50,4 +50,5 @@ Tool for starting kubernetes locally (All-in one single node installation)
 | Show dashboard |`minikube dashboard`|
 | Try to open a service in the browser via minikube|`minikube service web-service`
 | Start ssh connection with the minikube vm| `minikube ssh`
+| Enable ingress addon in minikube|`minikube addons enable ingress`
 
