@@ -34,6 +34,10 @@ Commandline client for accessing Kubernetes master node endpoint
 |Remove a specific rolebinding in a namespace| `kubectl -n test-namespace delete rolebinding existing-test-role-binding`
 |Create the ConfigMap| `kubectl create configmap test-config --from-literal=key1=value1 --from-literal=key2=value2`
 |Read the ConfigMap| `kubectl get configmaps test-config -o yaml`
+|Create a secret|`kubectl create secret generic my-password --from-literal=password=mysqlpassword`
+|Get secret|`kubectl get secret my-password`
+|Describe secret|`kubectl describe secret my-password`
+
 
 ## minikube
 
