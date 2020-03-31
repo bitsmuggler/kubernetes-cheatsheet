@@ -42,4 +42,5 @@ Tool for starting kubernetes locally (All-in one single node installation)
 | Start minikube (Kubernetes locally) | `minikube start` |
 | Show dashboard |`minikube dashboard`|
 | Try to open a service in the browser via minikube|`minikube service web-service
+| Start ssh connection with the minikube vm| `minikube ssh`
 
