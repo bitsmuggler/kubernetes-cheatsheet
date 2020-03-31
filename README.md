@@ -37,6 +37,7 @@ Commandline client for accessing Kubernetes master node endpoint
 |Create a secret|`kubectl create secret generic my-password --from-literal=password=mysqlpassword`
 |Get secret|`kubectl get secret my-password`
 |Describe secret|`kubectl describe secret my-password`
+|Creat secret from a file|`kubectl create secret generic my-file-password --from-file=password.txt
 
 
 ## minikube
