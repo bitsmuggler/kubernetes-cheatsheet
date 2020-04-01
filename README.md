@@ -39,6 +39,7 @@ Commandline client for accessing Kubernetes master node endpoint
 |Describe secret|`kubectl describe secret my-password`
 |Create secret from a file|`kubectl create secret generic my-file-password --from-file=password.txt`
 |Get ingress objects|`kubectl get ingress`
+|Apply changes by a specific manifest|`kubectl apply -f my-manifest.yaml`
 
 
 ## minikube
