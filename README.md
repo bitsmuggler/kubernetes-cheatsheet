@@ -54,3 +54,6 @@ Tool for starting kubernetes locally (All-in one single node installation)
 | Start ssh connection with the minikube vm| `minikube ssh`
 | Enable ingress addon in minikube|`minikube addons enable ingress`
 
+# Learning resources
+
+* [Introduction to Kubernetes by The Linux Foundation](https://www.edx.org/course/introduction-to-kubernetes)
