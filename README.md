@@ -40,6 +40,7 @@ Commandline client for accessing Kubernetes master node endpoint
 |Create secret from a file|`kubectl create secret generic my-file-password --from-file=password.txt`
 |Get ingress objects|`kubectl get ingress`
 |Apply changes by a specific manifest|`kubectl apply -f my-manifest.yaml`
+|Port forwarding|`kubectl port-forward --namespace my-namespace pod-id 5000:5000`
 
 
 ## minikube
